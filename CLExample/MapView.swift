@@ -19,6 +19,11 @@ struct MapView: View {
             UserAnnotation()
         }
         .mapStyle(.standard(elevation: .realistic))
+        .mapControls {
+            MapUserLocationButton()
+            MapCompass()
+            MapScaleView()
+        }
         .navigationTitle("JAX Beach")
     }
 }
